@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="100dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="00.00.00"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="70sp" />
+
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:onClick="onClickStart"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/timeView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:background="@color/colorAccent"
+        android:text="Start"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:onClick="onClickStop"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/buttonStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="Stop"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:onClick="onClickReset"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/buttonStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorAccent"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewTimer"
+        android:layout_width="1500dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/buttonReset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_timer_black_100dp"
+        tools:ignore="VectorDrawableCompat" />
+
+</RelativeLayout>
